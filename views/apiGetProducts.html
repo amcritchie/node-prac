@@ -1,0 +1,12 @@
+<h3>Products are loading</h3>
+
+<script type='text/javascript'>
+    $('.title').css('background-color', 'blue');
+    $.ajax({
+        url: "/hello",
+        context: document.body
+    }).done(function() {
+        $('.title').css('background-color', 'yellow');
+    })
+
+</script>
