@@ -4,21 +4,6 @@ var path = require('path');
 
 var app = express();
 
-var products = [
-    {
-        product: 'cups'
-    },
-    {
-        product: 'tables'
-    },
-    {
-        product: 'chairs'
-    },
-    {
-        product: 'carpets'
-    }
-];
-
 router.get('/', function (req, res, next) {
 
     res.render('index', {
