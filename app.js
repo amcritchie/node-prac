@@ -3,6 +3,7 @@
 var http = require('http');
 var express = require('express');
 var app = express();
+
 var port = 1111;
 var server = app.listen(app.get('port'), function(){
     console.log('server is listening.');
@@ -12,7 +13,6 @@ var server = app.listen(app.get('port'), function(){
 var expressHandlebars  = require('express-handlebars');
 var path = require('path');
 //var html = require('html');
-
 //var app = express();
 
 app.set('views', path.join(__dirname, '/views'));
